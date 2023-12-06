@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style5.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <title>Contact</title>
+</head>
+<body>
+  <header>
+    <ul>
+      <li class="ba">
+        <a href="/index.html">about</a>
+      </li>
+      <li class="ba">
+        <a href="/index2.html">hot tours</a>
+      </li>
+      <li class="ba">
+        <a href="/index3.html">special offers</a>
+      </li>
+      <li class="ba">
+        <a href="/index4.html">blog</a>
+      </li>
+      <li class="active">
+        <a href="/index5.html">contact</a>
+      </li>
+    </ul>
+    <select onchange="window.location.href = this.value;">
+      <option value="#" disabled="">Select a page:</option>
+      <option value="/index.html">ABOUT</option>
+      <option value="/index2.html">HOT TOURS</option>
+      <option value="/index3.html">SPECIAL OFFERS</option>
+      <option value="/index4.html">BLOG</option>
+      <option value="/index5.html" selected="">CONTACTS</option>
+    </select>
+  </header>
+
+
+  <div class="home">
+    <img src="/images/logo.png" alt="">
+  </div>
+
+  <!-- contact section  -->
+
+  <section class="contact">
+    <div class="info">
+      <h2>contact info</h2>
+      <p>TemplateMonster provides 24/7 support for all its <a href="">premium products.</a> Freebies go without it.</p>
+      <p>If you have any questions regarding the customization of the chosen free theme, ask <a href="">TemplateTuning</a> to help you on a paid basis.</p>
+      <div class="loction">
+        <span>The Company Name Inc.<br>8901 Marmora Road,<br>Glasgow, D04 89GR.</span>
+      </div>
+      <div class="contact-num">
+        <span>Freephone:+1 800 559 6580<br> Telephone:+1 800 603 6035<br> FAX:+1 800 889 9898</span>
+        <br>
+        <span>E-mail: <a href="">Demo@demolink.org</a></span>
+      </div>
+    </div>
+    <div class="contact-field">
+      <h2>get in touch</h2>
+      <form action="">
+        <input required type="text" name="name" placeholder="Name" \>
+        <input required type="email" name="email" placeholder="Email" \>
+        <input required type="text" name="country" placeholder="Country" \>
+        <textarea data-constraints="@Required @Length(min=20,max=999999)" name="Message" placeholder="Message" cols="48" rows="10"></textarea>
+        <br>
+        <button type="reset">Clear</button>
+        <button type="submit">submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <span class="text-white-50">YOUR TRIP (C) 2014 | PRIVACY POLICY | 3bdo-DEV</span>
+    <div class="footer-icon">
+      <a class="FI1" href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a class="FI2" href=""><i class="fa-brands fa-twitter"></i></a>
+      <a class="FI3" href=""><i class="fa-brands fa-google-plus-g"></i></a>
+    </div>
+  </footer>
+
+    <!-- js files  -->
+      <script src="/js/jquery-3.7.0.min.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/all.min.js"></script>
+      <script src="/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=header, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <title>YOUR TRIP</title>
+</head>
+<body>
+  <header>
+    <ul>
+      <li class="active ba">
+        <a href="/index.html">about</a>
+      </li>
+      <li class="ba">
+        <a href="/index2.html">hot tours</a>
+      </li>
+      <li class="ba">
+        <a href="/index3.html">special offers</a>
+      </li>
+      <li class="ba">
+        <a href="/index4.html">blog</a>
+      </li>
+      <li>
+        <a href="/index5.html">contact</a>
+      </li>
+    </ul>
+    <select onchange="window.location.href = this.value;">
+      <option value="#" disabled="">Select a page:</option>
+      <option value="/index.html" selected="">ABOUT</option>
+      <option value="/index2.html">HOT TOURS</option>
+      <option value="/index3.html">SPECIAL OFFERS</option>
+      <option value="/index4.html">BLOG</option>
+      <option value="/index5.html">CONTACTS</option>
+    </select>
+  </header>
+
+  <!--  first section *intro*  -->
+
+
+  <div id="home" class="logo">
+    <img src="/images/logo.png" alt="">
+  </div>
+
+  <section class="owl-carousel scrolle-section">
+    <div class="london">
+      <div class="description">
+        <h1>london</h1>
+        <h4>form</h4>
+        <h2>$1000</h2>
+        <button>learn more</button>
+      </div>
+    </div>
+    <div class="maldives">
+      <div class="description">
+        <h1>maldives</h1>
+        <h4>form</h4>
+        <h2>$2000</h2>
+        <button>learn more</button>
+      </div>
+    </div>
+    <div class="venice">
+      <div class="description">
+        <h1>venice</h1>
+        <h4>form</h4>
+        <h2>$1600</h2>
+        <button>learn more</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="catlog">
+    <div class="catlog-container row justify-content-center">
+      <div class="catlog-one col-sm-6 col-lg-2">
+        <div class="box">
+          <h3>BARCELONA</h3>
+          <h5>from</h5>
+          <span>$ 1000</span>
+          <a href="#home">learn more</a>
+        </div>
+      </div>
+      <div class="catlog-two col-sm-6 col-lg-2">
+        <div class="box">
+          <h3>GOA</h3>
+          <h5>from</h5>
+          <span>$ 1.500</span>
+          <a href="#home">learn more</a>
+        </div>
+      </div>
+      <div class="catlog-three col-sm-6 col-lg-2">
+        <div class="box">
+          <h3>PARIS</h3>
+          <h5>from</h5>
+          <span>$ 1.600</span>
+          <a href="#home">learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <!--  second section *bookingg & walcome*  -->
+
+  <section class="second-section">
+    <div class="booking-side">
+      <h2>BOOKING FORM</h2>
+      <form>
+        <div class="writeable-input">
+          <input class="information-input text-black-50" type="text" required placeholder="Name:" \>
+          <input class="information-input text-black-50" type="email" required placeholder="Email:" \>
+          <input class="information-input text-black-50" type="text" required placeholder="Country:" \>
+          <input class="information-input text-black-50" type="text" required placeholder="Hotel:" \>
+        </div>
+          <div>
+          <label for="checkIn" class="text-black-50">Check-in</label>
+          <input class="date datein text-black-50" id="checkIn" type="date" required name="Check-in" \>
+        </div>
+        <div>
+          <label for="checkOut" class="text-black-50">Check-out</label>
+          <input class="date dateout text-black-50" id="checkOut" required type="date" name="Check-out" \>
+        </div>
+
+        <div class="radio-inputs">
+          <span class="break-inputs mt-3 text-black-50">Comfort</span>
+          <div class="radio-one">
+            <input id="radioOne" type="radio" required name="Check" value="cheap">
+            <label for="radioOne" class="text-black-50">Cheap</label>
+          </div>
+          <div class="radio-two">
+            <input id="radioTwo" type="radio" required name="Check" value="Standart">
+            <label for="radioTwo" class="text-black-50">Standart</label>
+          </div>
+          <div class="radio-three">
+            <input id="radioThree" type="radio" required name="Check" value="lux">
+            <label for="radioThree" class="text-black-50">Lux</label>
+          </div>
+        </div>
+
+        <div class="select-inputs mt-3">
+          <label class="text-black-50">Adults</label>
+          <select class="choose-options-input text-black-50" required name="Adults" id="">
+            <option value="1" disabled hidden selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <label class="text-black-50">Children</label>
+          <select class="choose-options-input text-black-50" required name="Children" id="">
+            <option value="0" disabled hidden selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <label class="text-black-50">Rooms</label>
+          <select class="choose-options-input text-black-50" required name="Rooms" id="">
+            <option value="1" disabled hidden selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+
+        <textarea class="ps-3 pt-1 mt-4 mb-2 d-block" name="" placeholder="Message" cols="52" rows="10"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="wolcome-side">
+      <h2>WELCOME</h2>
+      <div class="first-line row fit-container">
+        <img class="col-xl-6 col-lg-12 col-md-12 col-sm-12" src="/images/page1_img1.jpg" alt="">
+        <span class="text-black-50 col-xl-6 col-lg-12 col-md-12 col-sm-12">Lorem ipsum dolor sit ere amet, consectetur ipiscin.
+        In mollis erat mattis neque facilisis, sit ametiol</span>
+      </div>
+
+      <div class="second-line">
+        <span class="text-black-50">Find the detailed description of this <a href="#home">freebie</a> at TemplateMonster blog.</span>
+        <p class="text-black-50"><a href="#home">Travel Website Templates </a>category offers you a variety of designs that are perfect for travel sphere of business.</p>
+        <p class="text-black-50">Proin pharetra luctus diam, a scelerisque eros convallis</p>
+      </div>
+
+      <div class="thard-line row container-fluid">
+        <h3>CLIENTS’ QUOTES</h3>
+        <div class="photo col-6">
+          <img src="/images/page1_img2.jpg" alt="">
+          <img class="move-img" src="/images/quotes.png" alt="">
+        </div>
+        <div class="text col-6">
+          <span class="text-black-50">Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh.</span>
+          <a href="#home">MIRANDA BROWN</a>
+        </div>
+        </div>
+      <button>More</button>
+    </div>
+  </section>
+
+
+    <!--  thard section *NEWS*  -->
+
+
+  <section class="thard-section">
+    <h2>LATEST NEWS</h2>
+    <div class="news">
+      <div class="newsone row container-fluid">
+
+        <div class="date-container col-6">
+          <span>JAN</span>
+          <span>10</span>
+          <i class="fa fa-comments"></i>
+        </div>
+
+        <div class="news-detale col-6">
+          <a href="#home">ALIQUAM NIBH</a>
+          <span>Proin pharetra luctus diam, any scelerisque eros convallisumsan. Maecenas vehicula egestas</span>
+        </div>
+
+      </div>
+      <div class="newstwo row container-fluid">
+        <div class="date-container col-6">
+          <span>JAN</span>
+          <span>21</span>
+          <i class="fa fa-comments"></i>
+        </div>
+
+        <div class="news-detale col-6">
+          <a href="#home">ETIAM DUI EROS</a>
+          <span>Any scelerisque eros vallisumsan. Maecenas vehicula egestas natis. Duis massa elit, auctor non</span>
+        </div>
+
+      </div>
+      <div class="newsthree row container-fluid">
+        <div class="date-container col-6">
+          <span>15</span>
+          <span>FEB</span>
+          <i class="fa fa-comments"></i>
+        </div>
+
+        <div class="news-detale col-6">
+          <a href="#home">UAMNIBH EDETO</a>
+          <span>Ros convallisumsan. Maecenas vehicula egestas venenatis. Duis massa elit, auctor non</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section end of page  -->
+
+  <footer>
+    <span class="text-white-50">YOUR TRIP (C) 2014 | PRIVACY POLICY | 3bdo-DEV</span>
+    <div class="footer-icon">
+      <a class="FI1" href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a class="FI2" href=""><i class="fa-brands fa-twitter"></i></a>
+      <a class="FI3" href=""><i class="fa-brands fa-google-plus-g"></i></a>
+    </div>
+  </footer>
+  <!-- js files  -->
+  <script src="/js/jquery-3.7.0.min.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/all.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

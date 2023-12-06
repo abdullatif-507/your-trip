@@ -1,0 +1,645 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  --gold: #f3aa29;
+  --black: #111;
+  --white: #eee;
+  --RedBG: url(/images/menu_bg.png) 0 0 repeat-x #d73430;
+  --red: #d73430;
+  --darkBlue: #001c35;
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 9;
+  width: 930px;
+  height: 60px;
+  box-shadow: 3px 3px 3px var(--darkBlue);
+  background: var(--RedBG);
+  border-radius: 0 0 6px 6px;
+  border: none;
+  margin: auto;
+}
+
+header ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+header ul li{
+  list-style: none;
+  display: inline;
+}
+
+header ul li a{
+  margin: 55px 45px 0px 45px;
+  color: var(--black);
+  font-size: 20px;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+header ul li a:hover{
+  color: var(--white);
+}
+
+header ul li.active a{
+  color: var(--white);
+}
+
+header ul li.ba::after{
+  border-right: 1px solid var(--black);
+  content: '';
+}
+
+header select{
+  display: none;
+}
+
+
+/* first section *intro*  */
+
+.logo{
+  position: relative;
+  top: 30px;
+  text-align: center;
+  z-index: 9;
+}
+
+.scrolle-section{
+  position: relative;
+  top: -120px;
+}
+
+.scrolle-section .london,
+.scrolle-section .maldives,
+.scrolle-section .venice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrolle-section .london{
+  background-image: url(/images/slide.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+
+.scrolle-section .maldives{
+  background-image: url(/images/slide1.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+
+.scrolle-section .venice{
+  background-image: url(/images/slide2.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+
+.description{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.description h1{
+  color: var(--gold);
+  font-size: 80px;
+  margin: 5px;
+}
+.description h4{
+  color: var(--white);
+  font-size: 30px;
+  margin: 5px;
+}
+.description h2{
+  color: var(--white);
+  font-size: 50px;
+  margin: 20px;
+}
+.description button{
+  background: var(--RedBG);
+  width: 230px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  color: var(--white);
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.description button:hover{
+  background: var(--darkBlue);
+  box-shadow: 3px 3px 3px var(--black);
+}
+
+.owl-carousel .owl-nav{
+  position: relative;
+  bottom: 300px;
+  left: 23%;
+  width: 700px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(226, 51, 83, 0.482) !important;
+  border-radius: 50px;
+  color: var(--white) !important;
+  transition: 0.2s;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover{
+  background-color: rgba(226, 51, 83, 0.482);
+}
+
+.owl-carousel .owl-nav button.owl-next{
+  left: 100%;
+}
+.owl-carousel .owl-nav button.owl-prev{
+  right: 100%;
+}
+
+/* catlog extintion  */
+
+.catlog{
+  text-align: center;
+  width: 1000px;
+  height: 0px;
+  margin: auto;
+  margin-bottom: 300px;
+}
+
+.catlog .catlog-container .catlog-one,
+.catlog .catlog-container .catlog-two,
+.catlog .catlog-container .catlog-three{
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  bottom: 210px;
+  z-index: 9;
+  margin: 0px 10px 0px 10px;
+}
+
+.catlog .catlog-container .catlog-one{
+  background-image: url(/images/ban_img1.jpg);
+}
+.catlog .catlog-container .catlog-two{
+  background-image: url(/images/ban_img2.jpg);
+}
+.catlog .catlog-container .catlog-three{
+  background-image: url(/images/ban_img3.jpg);
+}
+
+.catlog .catlog-container .box{
+  margin-top: 130px;
+}
+
+.catlog-container .box h3,
+.catlog-container .box h5,
+.catlog-container .box span{
+  color: var(--white);
+  display: block;
+  margin: 0px;
+}
+
+.catlog-container .box span{
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.catlog-container .box a{
+  padding: 5px 30px 5px 30px;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 22px;
+  background-color: var(--white);
+  text-decoration-line: none;
+  color: var(--red);
+  transition: 0.3s;
+}
+.catlog-container .box a:hover{
+  color: var(--white);
+  background-color: var(--red);
+}
+
+/* second-section start  */
+
+.second-section{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 0px 50px 0px;
+}
+
+/* booking-side dive */
+
+.booking-side{
+  width: auto;
+  z-index: 99;
+  padding: 10px;
+}
+
+.booking-side h2{
+  margin-bottom: 50px;
+}
+
+.booking-side form input{
+  padding-left: 10px;
+}
+
+.booking-side .writeable-input{
+  width: 500px;
+}
+
+.booking-side .information-input{
+  margin: 5px;
+  padding-left: 5px;
+  outline: none;
+  border: none;
+  background-color: var(--white);
+}
+
+.booking-side .date{
+  width: 300px;
+  padding-left: 15px;
+  outline: none;
+  border: none;
+  background-color: var(--white);
+}
+
+form .break-inputs{
+  display: block;
+  margin: 15px 0px 10px 0px;
+}
+
+.booking-side .datein{
+  margin: 10px 0px 10px 25px;
+}
+.booking-side .dateout{
+  margin-left: 14px;
+}
+
+
+
+.booking-side form .radio-inputs div.radio-one,
+.booking-side form .radio-inputs div.radio-two,
+.booking-side form .radio-inputs div.radio-three{
+  display: inline;
+}
+.booking-side form .radio-inputs .radio-two{
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.booking-side form .select-inputs label{
+  margin-left: 10px;
+}
+
+.booking-side form .choose-options-input{
+  width: 60px;
+}
+
+.booking-side form button,
+.wolcome-side button{
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  background-color: #d4d4d4;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.booking-side form button:hover,
+.wolcome-side button:hover{
+  background-color: var(--red);
+  color: var(--white);
+}
+
+/* wolcome-side start  */
+
+.wolcome-side{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  height: auto;
+  padding-left: 70px;
+}
+
+.wolcome-side .first-line{
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wolcome-side .second-line{
+  width: 92%;
+}
+
+.wolcome-side .second-line span{
+  display: block;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.wolcome-side a{
+  text-decoration-line: none;
+  color: var(--gold);
+}
+
+.wolcome-side .thard-line{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wolcome-side .thard-line .photo{
+  display: inline;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: auto;
+  padding-top: 10px;
+}
+.wolcome-side .thard-line .photo .move-img{
+  position: absolute;
+  top: 0px;
+  left: 120px;
+}
+
+.wolcome-side .thard-line .text{
+  z-index: 9;
+  width: 70%;
+  padding-top: 10px;
+}
+
+.wolcome-side .thard-line .text a{  
+  display: block;
+  text-align: end;
+  margin-top: 10px;
+}
+
+
+/* section three start  *NEWS section* */
+
+.thard-section{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 10px 80px 40px;
+}
+
+.thard-section .date-container{
+  width: 65px;
+  height: 80px;
+  margin-top: 10px;
+  background: var(--RedBG);
+  border: none;
+  border-radius: 12px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: var(--white);
+}
+
+.thard-section .news{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+} 
+
+.thard-section .newsone .news-detale,
+.thard-section .newstwo .news-detale,
+.thard-section .newsthree .news-detale{
+  display: inline-block;
+  width: 75%;
+}
+
+.thard-section a{
+  display: block;
+  color: var(--gold);
+  text-decoration-line: none;
+}
+.thard-section .news-detale span{
+  font-size: 15px;
+  color: rgba(0,0,0,.5);
+}
+
+/* footer section -end of page- */
+
+footer{
+  width: auto;
+  height: 120px;
+  text-align: center;
+  background-color: var(--darkBlue);
+  padding-top: 40px;
+}
+
+footer .footer-icon{
+  display: inline;
+  margin-left: 40%;
+}
+
+.footer-icon a{
+  text-decoration-line: none;
+  color: var(--white);
+  background: var(--RedBG);
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+.footer-icon .FI1{
+  padding: 10px 15px 10px 15px;
+}
+.footer-icon .FI2{
+  padding: 10px 12px 10px 12px;
+}
+
+.footer-icon a:hover{
+  background-position: 0 -100px;
+  background-color: var(--white);
+  color: var(--red);
+}
+
+
+  /* mini screen custom  */
+
+@media (max-width: 450px) {
+  header{
+    width: 82%;
+  }
+  header ul{
+    display: none;
+  }
+  header select{
+    display: block;
+    width: 80%;
+    height: 50%;
+    color: var(--white);
+    background: #000000a8;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+  }
+  /* first section *intro*  */
+  .description h1{
+    font-size: 62px;
+  }
+  .owl-carousel .owl-nav{
+    width: 205px;
+  }
+  /* catlog extintion  */
+    .catlog{
+      width: 300px;
+      height: auto;
+      margin-bottom: 0px;
+    }
+    .catlog .catlog-container{
+      height: 975px;
+    }
+  /* second-section start  */
+  
+  .second-section{
+    flex-direction: column;
+  }
+  .booking-side .information-input{
+    display: block;
+    width: 77%;
+    height: 45px;
+    margin: 12px 0px;
+  }
+  .booking-side textarea{
+    width: 78%;
+  }
+  .wolcome-side{
+    width: 85%;
+    padding: 50px 0px;
+    margin: auto;
+  }
+  .wolcome-side .thard-line .text{ 
+    width: 100%;
+  }
+  .booking-side form button, .wolcome-side button{
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  /* section three start  *NEWS section* */
+  .thard-section{
+    width: 100%;
+    gap: 12px;
+  }
+  .thard-section .news{
+    flex-direction: column;
+    gap: 28px;
+  }
+  /* footer  */
+  footer{
+    height: 140px;
+  }
+  footer .footer-icon{
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+}
+
+  /* tablet screen custom */
+
+@media (min-width: 500px) and (max-width: 1030px) {
+  header{
+    width: 550px;
+  }
+  header ul{
+    display: none;
+  }
+  header select{
+    display: block;
+    width: 80%;
+    height: 50%;
+    color: var(--white);
+    background: #000000a8;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .owl-carousel .owl-nav{
+    width: 50%;
+  }
+  .catlog{
+    width: 650px;
+  }
+  .catlog .catlog-container .catlog-one,
+  .catlog .catlog-container .catlog-two,
+  .catlog .catlog-container .catlog-three{
+    width: 200px;
+    height: 300px;
+  }
+  
+  .second-section{
+    flex-direction: column;
+  }
+  .second-section .booking-side{
+    margin: auto;
+  }
+  .wolcome-side{
+    width: 65%;
+    padding: 50px 0px;
+    margin: auto;
+  }
+  .wolcome-side .thard-line .text{ 
+    width: 73%;
+  }
+  .booking-side form button, .wolcome-side button{
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
+  .thard-section{
+    width: 100%;
+    gap: 12px;
+  }
+  .thard-section .news{
+    flex-direction: column;
+    gap: 28px;
+  }
+  /* footer  */
+  footer{
+    height: 140px;
+  }
+  footer .footer-icon{
+    display: block;
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+}
